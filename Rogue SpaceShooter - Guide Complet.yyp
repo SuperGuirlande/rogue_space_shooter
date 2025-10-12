@@ -10,7 +10,7 @@
     ],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Pièces","folderPath":"folders/Pièces.yy","name":"Pièces","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,7 +27,8 @@
   },
   "name":"Rogue SpaceShooter - Guide Complet",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"rm_fight","path":"rooms/rm_fight/rm_fight.yy",},},
     {"id":{"name":"player_ship_25","path":"sprites/player_ship_25/player_ship_25.yy",},},
     {"id":{"name":"player_ship_50","path":"sprites/player_ship_50/player_ship_50.yy",},},
     {"id":{"name":"player_ship_75","path":"sprites/player_ship_75/player_ship_75.yy",},},
@@ -39,7 +40,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_fight","path":"rooms/rm_fight/rm_fight.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
