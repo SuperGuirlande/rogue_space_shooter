@@ -4,6 +4,23 @@ input_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 input_up = keyboard_check(vk_up) or keyboard_check(ord("Z"));
 input_down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 
+// Get powering
+if ( input_left ) or ( input_right ) or ( input_down ) or ( input_up ) {
+	powering = true;
+} else {
+	powering = false;
+}
+
+// DEBUG MODE
+if ( DEBUG_MODE ) {
+	if (keyboard_check_pressed(vk_numpad0)) { active_engine = 0; setup_player_engine(active_engine); }
+	if (keyboard_check_pressed(vk_numpad1)) { active_engine = 1; setup_player_engine(active_engine); }
+	if (keyboard_check_pressed(vk_numpad2)) { active_engine = 2; setup_player_engine(active_engine); }
+	if (keyboard_check_pressed(vk_numpad3)) { active_engine = 3; setup_player_engine(active_engine); }
+	
+	
+}
+
 // Calcul des 4 directions
 horizontal_input = input_right - input_left;
 vertical_input = input_down - input_up;
